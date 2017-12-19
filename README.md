@@ -1,29 +1,42 @@
 # LBDropDownView
 
-[![CI Status](http://img.shields.io/travis/j1103765636@iCloud.com/LBDropDownView.svg?style=flat)](https://travis-ci.org/j1103765636@iCloud.com/LBDropDownView)
-[![Version](https://img.shields.io/cocoapods/v/LBDropDownView.svg?style=flat)](http://cocoapods.org/pods/LBDropDownView)
-[![License](https://img.shields.io/cocoapods/l/LBDropDownView.svg?style=flat)](http://cocoapods.org/pods/LBDropDownView)
-[![Platform](https://img.shields.io/cocoapods/p/LBDropDownView.svg?style=flat)](http://cocoapods.org/pods/LBDropDownView)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-LBDropDownView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'LBDropDownView'
-```
+##  辛辛苦苦点进来。 ～ 那就给个星星吧～
 
 ## Author
 
-j1103765636@iCloud.com, 1103765636@qq.com
+Leon-Lee
 
-## License
+## Usage
+```
+//这套代码做的事多个section ，每个section里面有又有多个item，类似UITableView，通过model即可配置UI 和数据，如需修改UI,LBDropDownItemView.m 里面可以修改。
+NSMutableArray *groupModels = @[].mutableCopy;
+for (int i = 0; i < 5; i ++) {
+NSMutableArray *dropDownItemArray = [NSMutableArray array];
+for (int j = 0; j < 4; j++) {
+LBDropDownItem *item = [[LBDropDownItem alloc] init];
+item.content = [NSString stringWithFormat:@"%d",i];
+[dropDownItemArray addObject:item];
+}
 
-LBDropDownView is available under the MIT license. See the LICENSE file for more info.
+LBDropDownGroupNameModel *groupModel = [LBDropDownGroupNameModel modelWithDropDownItems:dropDownItemArray];
+groupModel.content = @"title";
+[groupModels addObject:groupModel];
+}
+
+
+LBDropDownModel *model = [LBDropDownModel modelWithLBDropDownGroupNameModel:groupModels];
+[self.view layoutIfNeeded];
+LBDropDownView *dropDownView = [LBDropDownView dropDownViewWithModel:model];
+[self.view addSubview:dropDownView];
+//    [dropDownView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(v);
+//        make.top.equalTo(v.mas_bottom).with.offset(10);
+//        make.width.mas_equalTo(200);
+//        make.height.mas_equalTo(100);
+//    }];
+dropDownView.frame = CGRectMake(10, 74, 200, 100);
+dropDownView.delegate = self;
+```
+
+
+
