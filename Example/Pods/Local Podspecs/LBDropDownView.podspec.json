@@ -1,9 +1,9 @@
 {
   "name": "LBDropDownView",
-  "version": "0.1.0",
-  "summary": "A short description of LBDropDownView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/j1103765636@iCloud.com/LBDropDownView",
+  "version": "1.0.0",
+  "summary": "a drop down list",
+  "description": "drop down list tool",
+  "homepage": "https://github.com/LeonLeeboy/LBDropDownView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,15 @@
     "j1103765636@iCloud.com": "1103765636@qq.com"
   },
   "source": {
-    "git": "https://github.com/j1103765636@iCloud.com/LBDropDownView.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/LeonLeeboy/LBDropDownView.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LBDropDownView/Classes/**/*"
+  "source_files": "LBDropDownView/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
 }

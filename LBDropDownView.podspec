@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   s.source_files = 'LBDropDownView/Classes/**/*'
   
 
-   s.frameworks = 'UIKit', 'Foundation'
+  s.frameworks = 'UIKit', 'Foundation'
+
 
 end

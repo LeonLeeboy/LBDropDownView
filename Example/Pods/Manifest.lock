@@ -1,5 +1,5 @@
 PODS:
-  - LBDropDownView (0.1.0)
+  - LBDropDownView (1.0.0)
 
 DEPENDENCIES:
   - LBDropDownView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LBDropDownView: be48128b4dc358598a5063b9cac3f301323ed70a
+  LBDropDownView: a445b482d1ee1323d4260b265dd52f3281ee6a55
 
 PODFILE CHECKSUM: 257e05decfe20d912e2c48f7b7d4510475ce3a8c
 

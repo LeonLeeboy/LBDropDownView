@@ -12,7 +12,7 @@
 @class LBDropDownView;
 @protocol LBDropDownViewDelegate <NSObject>
 
-@required;
+@optional
 - (void)dropDownView:(LBDropDownView *)dropDownView didSelecteItemSectionIndex:(NSInteger)sectionIndex itemIndex:(NSInteger)itenIndex;
 
 @end

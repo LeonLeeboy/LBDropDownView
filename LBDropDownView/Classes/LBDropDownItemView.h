@@ -11,7 +11,7 @@
 
 @protocol LBDromDownItemViewDelegate <NSObject>
 
-@optional
+@required
 - (void)DropDownViewDidClickItemAtIndex:(NSInteger)intemIndex;
 
 @end
