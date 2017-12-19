@@ -1,0 +1,6 @@
+framework module Pods_LBDropDownView_Example {
+  umbrella header "Pods-LBDropDownView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

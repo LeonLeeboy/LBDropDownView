@@ -1,0 +1,6 @@
+framework module LBDropDownView {
+  umbrella header "LBDropDownView-umbrella.h"
+
+  export *
+  module * { export * }
+}
