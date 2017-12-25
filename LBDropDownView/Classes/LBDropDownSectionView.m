@@ -56,7 +56,7 @@
    
     _contentModel.content = @"";
     _contentModel.backgroundColor = [UIColor lightGrayColor];
-    _contentModel.sectionHeight = 60;
+    _contentModel.sectionHeight = sectionHeight;
     _contentModel.textColor = [UIColor darkGrayColor];
     //UI
     self.backgroundColor = _contentModel.backgroundColor;

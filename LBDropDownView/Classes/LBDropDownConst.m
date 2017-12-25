@@ -8,7 +8,9 @@
 
 #import "LBDropDownConst.h"
 
-const CGFloat itemSpace = 5;
+const CGFloat itemSpace = 1;
 const CGFloat sectionSpace = 3;
+const CGFloat itemHeight = 20;
+const CGFloat sectionHeight = 30;
 
 

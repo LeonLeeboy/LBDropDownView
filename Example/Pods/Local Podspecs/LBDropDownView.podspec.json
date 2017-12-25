@@ -1,6 +1,6 @@
 {
   "name": "LBDropDownView",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "summary": "a drop down list",
   "description": "drop down list tool",
   "homepage": "https://github.com/LeonLeeboy/LBDropDownView",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/LeonLeeboy/LBDropDownView.git",
-    "tag": "1.0.0"
+    "tag": "1.1.0"
   },
   "platforms": {
     "ios": "8.0"

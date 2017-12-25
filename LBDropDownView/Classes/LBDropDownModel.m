@@ -48,7 +48,7 @@
         model.dropDownItems = dropDownItems;
         model.backgroundColor = [UIColor whiteColor];
         model.textColor = [UIColor darkGrayColor];
-        model.sectionHeight = 64;
+        model.sectionHeight = sectionHeight;
         return model;
 }
 
@@ -80,7 +80,7 @@
         self.unselectedImageName = @"";
         self.selectedImageName = @"";
         self.backgroundColor = [UIColor lightGrayColor];
-        self.itemHeight = 44;
+        self.itemHeight = itemHeight;
         self.textColor = [UIColor darkGrayColor];
         self.font = [UIFont systemFontOfSize:14];
     }

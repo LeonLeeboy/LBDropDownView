@@ -11,4 +11,6 @@
 
 UIKIT_EXTERN const CGFloat itemSpace;
 UIKIT_EXTERN const CGFloat sectionSpace;
+UIKIT_EXTERN const CGFloat itemHeight;
+UIKIT_EXTERN const CGFloat sectionHeight;
 

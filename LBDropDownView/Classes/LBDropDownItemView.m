@@ -48,7 +48,7 @@
     _itemModel.selectedImageName = @"";
     _itemModel.content = @"";
     _itemModel.backgroundColor = [UIColor whiteColor];
-    _itemModel.itemHeight = 44;
+    _itemModel.itemHeight = itemHeight;
     _itemModel.textColor = [UIColor darkGrayColor];
     _itemModel.font = [UIFont systemFontOfSize:14];
     //UI

@@ -38,9 +38,15 @@
     LBDropDownView *dropDownView = [LBDropDownView dropDownViewWithModel:model];
     [self.view addSubview:dropDownView];
    
-    dropDownView.frame = CGRectMake(10, 74, 200, 100);
+    dropDownView.frame = CGRectMake(10, 74, 80, 100);
+    dropDownView.center = self.view.center;
     dropDownView.delegate = self;
     
+}
+
+- (void)dropDownView:(LBDropDownView *)dropDownView didSelecteItemSectionIndex:(NSInteger)sectionIndex itemIndex:(NSInteger)itenIndex{
+    UIAlertView *al = [[UIAlertView alloc] initWithTitle:@"Remind" message:@"u have click item!" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil];
+    [al show];
 }
 
 - (void)didReceiveMemoryWarning
